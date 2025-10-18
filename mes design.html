@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes réalisations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MC <span>Creatlab</span></div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="index.html#apropos" class="nav-link">À propos</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="mes design.html" class="nav-link">Mes réalisations</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="realisation" class="portfolio-section">
+    <h2>Mes réalisations</h2>
+    <div class="gallery-projet">
+      <div class="projet-item"><img src="img/MARIAGE2.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/subime beauté 2.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/ramadan affiche.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/ANNIV.jpg" alt=""></div>
+    </div>
+
+    <h2>Ordinateurs customisés</h2>
+    <div class="gallery-projet">
+      <div class="projet-item"><img src="img/PC1.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/PC2.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/PC3.jpg" alt=""></div>
+      <div class="projet-item"><img src="img/PC4.jpg" alt=""></div>
+    </div>
+
+    <div class="btn">
+      <a href="index.html">Retour</a>
+    </div>
+  </section>
+
+  <script>
+    const menuToggle = document.querySelector("#mobile-menu");
+    const navMenu = document.querySelector(".nav-menu");
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      menuToggle.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
